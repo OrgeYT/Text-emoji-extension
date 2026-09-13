@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 320px;
+  max-height: 480px;
+  overflow: hidden;
+  background: #0d0d10;
+  color: #d8d8e0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 14px 10px;
+  border-bottom: 1px solid #1e1e24;
+  background: #111116;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  background: #18181e;
+  border: 1px solid #2a2a34;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #eee;
+  margin-bottom: 2px;
+}
+
+.howto {
+  font-size: 11px;
+  color: #777;
+  line-height: 1.35;
+}
+
+.howto strong {
+  color: #aaa;
+}
+
+.search-wrap {
+  padding: 8px 12px;
+  border-bottom: 1px solid #1a1a20;
+}
+
+.search-wrap input {
+  width: 100%;
+  background: #16161c;
+  border: 1px solid #2a2a34;
+  border-radius: 6px;
+  padding: 6px 10px;
+  color: #d8d8e0;
+  font-size: 12px;
+  outline: none;
+}
+
+.search-wrap input::placeholder {
+  color: #555;
+}
+
+.search-wrap input:focus {
+  border-color: #444;
+}
+
+#emoji-list {
+  overflow-y: auto;
+  padding: 6px 0 12px;
+  flex: 1;
+  scrollbar-width: thin;
+  scrollbar-color: #333 #0d0d10;
+}
+
+#emoji-list::-webkit-scrollbar {
+  width: 5px;
+}
+#emoji-list::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+.group {
+  margin-bottom: 4px;
+}
+
+.group-title {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #555566;
+  padding: 6px 14px 3px;
+}
+
+.emoji-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding: 2px 12px 6px;
+}
+
+.emoji {
+  background: #18181e;
+  border-radius: 5px;
+  padding: 4px 7px;
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1.3;
+  cursor: pointer;
+  user-select: all;
+}
+
+.emoji:hover {
+  background: #22222c;
+  color: #fff;
+}
+
+.empty {
+  text-align: center;
+  padding: 24px 12px;
+  color: #555;
+  font-size: 12px;
+}
